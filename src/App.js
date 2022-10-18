@@ -1,16 +1,16 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
-// import RegularLsit from './RegularList';
+import { people } from './data/data';
+import RegularList from './RegularList';
+import { SmallPersonListItem } from './people/SmallPersonListItem';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-      </header>
-      <RegularLsit />
-    </div>
+    <RegularList
+      items={people}
+      resourceName={'person'}
+      itemComponent={SmallPersonListItem}
+    />
   );
 }
 
