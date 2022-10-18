@@ -1,6 +1,6 @@
 import React from 'react';
 
-const RegularLsit = ({ items, resourceName, itemComponent: ItemComponent }) => {
+const RegularList = ({ items, resourceName, itemComponent: ItemComponent }) => {
   return (
     <>
       {items.map((item, i) => (
@@ -12,4 +12,4 @@ const RegularLsit = ({ items, resourceName, itemComponent: ItemComponent }) => {
     </>
   );
 };
-export default RegularLsit;
+export default RegularList;
