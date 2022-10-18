@@ -6,11 +6,6 @@ import { SmallPersonListItem } from './people/SmallPersonListItem';
 
 function App() {
   return (
-    <RegularList
-      items={people}
-      resourceName={'person'}
-      itemComponent={SmallPersonListItem}
-    />
   );
 }
 
