@@ -11,8 +11,16 @@ export const DataContainer = ({ children }) => {
       setDataUser(data);
     })();
   },[]);
-  console.log(dataUser);
-  console.log(React.Children.count(children));
 
-  return <div> data container</div>;
+  console.log(dataUser);
+ 
+  return (
+    <>
+      {React.Children.map(children, child => {
+        if(React.isValidElement(child)){
+          return React.cloneElement(child, {dataUser})
+        }
+      })}
+    </>
+    );
 };

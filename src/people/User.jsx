@@ -1,7 +1,11 @@
 import React from "react";  
 
-export const User = () =>{
+export const User = ({dataUser}) =>{
+    console.log(dataUser);
     return (
-        <div>To jest User component</div>
+        <>
+            <div>{dataUser?.name}</div>
+            <div>{dataUser?.age}</div>
+        </> 
     )
 }
