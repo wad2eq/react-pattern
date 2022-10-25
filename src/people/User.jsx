@@ -1,7 +1,7 @@
 import React from "react";  
 
 export const User = ({dataUser}) =>{
-    console.log(dataUser);
+    console.log('dataUser');
     return (
         <>
             <div>{dataUser?.name}</div>

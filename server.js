@@ -13,6 +13,7 @@ let currentUser = {
 
 let users = [
   {
+    id: "1",
     name: "John Doe",
     age: 54,
     hairColor: "brown",
@@ -34,6 +35,7 @@ let users = [
 
 const products = [
   {
+    id: "1",
     name: "Flat-Screen TV",
     price: "$300",
     description: "Huge LCD screen, a great deal",
