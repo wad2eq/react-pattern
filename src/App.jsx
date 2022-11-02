@@ -1,14 +1,18 @@
 import React from "react";
 import "./App.css";
 import { User } from "./people/User";
-import { ResourceLoader } from "./ResourceLoader";
+import { Product } from "./products/Product";
+import { ResourceLoader } from "./ResoureceLoader";
 
 function App() {
   return (
     <>
       <h1>Hello world</h1>
-      <ResourceLoader resourceUrl="/users/1" resourceName="dataUser">
+      <ResourceLoader url="/users/1" resourceName="dataUser">
         <User />
+      </ResourceLoader>
+      <ResourceLoader url="/products/1" resourceName="product">
+        <Product />
       </ResourceLoader>
     </>
   );
