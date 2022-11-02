@@ -1,15 +1,15 @@
 import React from "react";
 import "./App.css";
-import { DataContainer } from "./DataContainer";
+import { UserLoader } from "./DataLoaders/UserLoader";
 import { User } from "./people/User";
 
 function App() {
   return (
     <>
       <h1>Hello world</h1>
-      <DataContainer>
+      <UserLoader userId={2}>
         <User />
-      </DataContainer>
+      </UserLoader>
     </>
   );
 }
